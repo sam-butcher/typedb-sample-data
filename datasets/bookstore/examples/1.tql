@@ -1,0 +1,3 @@
+match $x isa $t; 
+$t sub entity;
+get $x; count;

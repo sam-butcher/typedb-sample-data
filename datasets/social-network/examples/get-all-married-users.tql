@@ -1,0 +1,3 @@
+match $u isa user;
+(spouse: $u) isa marriage;
+fetch $u: attribute;

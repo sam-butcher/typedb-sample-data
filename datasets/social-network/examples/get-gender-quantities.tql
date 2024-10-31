@@ -1,0 +1,2 @@
+match $u isa user, has gender $g;
+get; group $g; count;
