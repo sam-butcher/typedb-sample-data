@@ -15,11 +15,13 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-exports_files([
-    "bookstore/data.tql",
-    "bookstore/schema.tql",
-    "bookstore/examples/*.tql",
-    "social-network/data.tql",
-    "social-network/schema.tql",
-    "social-network/examples/*.tql",
-])
+#exports_files([
+#    "bookstore/data.tql",
+#    "bookstore/schema.tql",
+#    "bookstore/examples/*.tql",
+#    "social-network/data.tql",
+#    "social-network/schema.tql",
+#    "social-network/examples/*.tql",
+#])
+
+exports_files(glob(["**/*.tql"]))
