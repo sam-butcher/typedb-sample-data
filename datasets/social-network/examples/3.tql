@@ -1,0 +1,4 @@
+match $post isa post, has creation-timestamp $post-created;
+$comment isa comment, has comment-text $comment-text;
+(parent: $post, comment: $comment) isa commenting;
+get; sort $post-created; group $post;
