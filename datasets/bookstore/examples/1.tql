@@ -1,3 +1,2 @@
-match $x isa $t; 
-$t sub entity;
-get $x; count;
+match $book isa book;
+fetch $book: attribute;

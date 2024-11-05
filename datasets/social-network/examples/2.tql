@@ -1,2 +1,2 @@
-match $u isa user, has gender $g;
-get; group $g; count;
+match $person isa person, has gender $gender;
+get; group $gender; count;

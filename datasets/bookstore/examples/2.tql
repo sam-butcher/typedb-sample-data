@@ -1,3 +1,13 @@
-match $x isa $t; 
-$t sub relation;
-get $x; count;
+match
+  $user isa user, has id "u0002";
+  $order (buyer: $user) isa order;
+fetch
+  $order: attribute;
+  order-lines: {
+    match
+      (order: $order, item: $item) isa order-line,
+        has quantity $quantity;
+    fetch
+      $item: attribute;
+      $quantity;
+  };
