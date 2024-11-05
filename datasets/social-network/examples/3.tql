@@ -8,6 +8,5 @@ fetch
       (parent: $post, comment: $comment) isa commenting;
     fetch
       $comment: comment-text;
-  }
-; 
+  }; 
 sort $post-created; limit 1;
