@@ -1,2 +1,4 @@
+# Fetch information about all books in the datbaase
+
 match $book isa book;
 fetch $book: attribute;

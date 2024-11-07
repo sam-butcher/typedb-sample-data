@@ -1,3 +1,5 @@
+# Fetch information about the orders of a specific customer
+
 match
   $user isa user, has id "u0002";
   $order (buyer: $user) isa order;

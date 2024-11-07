@@ -1,3 +1,5 @@
+# Fetch information about every married person in the social network
+
 match $person isa person;
 (spouse: $person) isa marriage;
 fetch $person: attribute;

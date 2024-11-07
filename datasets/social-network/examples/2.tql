@@ -1,2 +1,4 @@
+# Count how many people of each gender are present in the database
+
 match $person isa person, has gender $gender;
 get; group $gender; count;

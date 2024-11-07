@@ -1,3 +1,5 @@
+# Fetch the text and all direct comments of the most recent post
+
 match 
   $post isa post, has creation-timestamp $post-created;
 fetch 
